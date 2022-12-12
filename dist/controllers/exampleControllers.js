@@ -16,7 +16,8 @@ exports.getExampleData = exports.getExample = void 0;
 const http_errors_1 = __importDefault(require("http-errors"));
 const Example_1 = __importDefault(require("../models/Example"));
 const getExample = (req, res, next) => {
-    res.json({ message: "hello" });
+    res.json({ message: "hello world!!!" });
+    console.log("it ran....");
 };
 exports.getExample = getExample;
 const getExampleData = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {

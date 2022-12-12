@@ -3,7 +3,9 @@ import { RequestHandler } from "express";
 import Example from "../models/Example";
 
 export const getExample: RequestHandler = (req, res, next) => {
-  res.json({ message: "hello" });
+  res.json({ message: "hello world!!!" });
+  console.log("it ran....");
+  
 };
 
 export const getExampleData: RequestHandler = async (req, res, next) => {
